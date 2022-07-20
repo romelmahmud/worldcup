@@ -76,7 +76,7 @@ body{
 }
 
 /* Bannner Responsive */
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 1156px) {
    .banner{
       padding: 60px 20px 0px 65px;
    
@@ -88,7 +88,7 @@ body{
       font-size: 14px;
    }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 820px) {
    .banner{
    padding: 30px 20px 0px 40px;
 
@@ -278,7 +278,7 @@ display: none;
       color: white;
    }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 820px) {
    .main {
       margin: 50px 20px; 
    }
@@ -387,7 +387,7 @@ display: none;
 }
 
 /* Footer Responsive */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 820px) {
    .footer{
       padding: 60px 0 40px;
    }
