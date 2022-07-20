@@ -201,10 +201,10 @@ body{
    border: 1px solid #E8E8E8;
    color: #161616;
 }
-.card_content{
+.blog_card_content{
    padding: 20px;
 }
-.card_button{
+.blog_card_button{
    display: inline-block;
    text-decoration: none;
    font-size: 16px;
@@ -217,36 +217,38 @@ body{
    margin-bottom: 15px;
 }
 
-.card_button:hover{
+.blog_card_button:hover{
    background-color: #dfdfdf;
   
 }
-.card_title{
+.blog_card_title{
    font-size: 17px;
    font-weight: 600;
    line-height: 1.5;
    margin-bottom: 20px;
 }
-.card_stats {
+.blog_card_stats {
    display: flex;
    
 }
 
-.card_stats .stats{
+.blog_card_stats .stats{
    display: flex;
    margin-right: 30px;
 }
 
-.card_stats img {
+.blog_card_stats img {
    width: 24px;
    height: 24px;
    margin-right: 10px;
 }
 
-.card_stats span {
+.blog_card_stats span {
    color: rgba(22, 22, 22, .7);
    font-weight: 400;
 }
+
+/* Button for only Tablet Divice */
 .tablet_button{
 display: flex;
 justify-content: center;
