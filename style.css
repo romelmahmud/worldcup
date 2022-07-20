@@ -134,9 +134,17 @@ body{
       margin-bottom: 12px;
       line-height: 1.5;
    }
-   
+/*    
+   .banner_text{
+      white-space: nowrap; 
+  width: 90%; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+ 
+} */
+   }
   
-}
+
 
 
 /* Banner Style end */
