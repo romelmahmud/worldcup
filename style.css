@@ -56,6 +56,17 @@ body{
    max-width: 90%;
    color: rgba(255, 255, 255, .8);
 }
+@keyframes glow
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(221, 0, 0, .4);
+    /* transform: scale(1.01); */
+  }
+  
+  100% {
+    box-shadow: 0 0 0 25px rgba(221, 0, 0, 0);
+  }
+}
 
 .btn {
    font-family: 'Roboto', sans-serif;
@@ -67,13 +78,29 @@ body{
    display: inline-block;
    border-radius: 5px;
    margin: 30px 0;
+   transition: transform .4s ease-in;
+   animation:glow 1s  infinite forwards;
+   
 
 }
-
 .btn .fa-chevron-right{
    margin-left: 10px;
+   position: relative;
+   transition: all .4s ease-in;
+   
 
 }
+.btn:hover {
+   animation-play-state: paused;
+   transform: scale(1.05);
+}
+
+.btn:hover .fa-chevron-right{
+   margin-left: 20px;
+   transform: scale(1.1);
+}
+
+
 
 /* Bannner Responsive */
 @media only screen and (max-width: 1156px) {
@@ -124,7 +151,7 @@ body{
    .banner{
       grid-template-columns: 1fr;
      text-align: center;
-     padding: 30px 35px 0px ;
+     padding: 30px 20px 0px ;
      border-radius: 10px;
      row-gap: 30px;
    }
@@ -134,14 +161,16 @@ body{
       margin-bottom: 12px;
       line-height: 1.5;
    }
-/*    
+   
    .banner_text{
       white-space: nowrap; 
-  width: 90%; 
-  overflow: hidden;
-  text-overflow: ellipsis;
- 
-} */
+      font-size: 14px;
+      max-width: 200px; 
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 0 auto;
+      
+}
    }
   
 /* Banner Style end */
@@ -280,6 +309,35 @@ body{
 }
 /* Upcoming Matchs Page Cards Style End */
 
+/* All Groups Page Style Start */
+.group_card{
+   padding: 30px 20px 20px;
+}
+
+
+.group_card_heading{
+   font-size: 22px;
+   text-align: center;
+   padding-bottom: 10px;
+   margin-bottom: 20px;
+   border-bottom: 1px solid #E8E8E8 ;
+}
+.country{
+   display: flex;
+   align-items: center;
+   margin-bottom: 10px;
+}
+.country_flag{
+   width: 45px;
+   height: 45px;
+   margin-right: 15px;
+}
+
+.country_name{
+   font-weight: 600;
+   font-size: 18px;
+}
+/* All Groups Page Style End */
 
 /* Button for only Tablet Divice */
 .tablet_button{
@@ -288,8 +346,16 @@ justify-content: center;
 display: none;
 }
 
-.tablet_button .btn:hover{
-   background-color: #930000;
+.hidden_btn{
+   font-family: 'Roboto', sans-serif;
+   font-size: 18px;
+   text-decoration: none;
+   color: white;
+   padding: 16px 25px;
+   background-color: #DD0000;
+   display: inline-block;
+   border-radius: 5px;
+   margin: 30px 0;
 }
 
 
