@@ -144,9 +144,6 @@ body{
 } */
    }
   
-
-
-
 /* Banner Style end */
 
 /* Main section Style start */
@@ -201,6 +198,7 @@ body{
    border: 1px solid #E8E8E8;
    color: #161616;
 }
+/* Blog Page Cards style Start */
 .blog_card_content{
    padding: 20px;
 }
@@ -247,6 +245,41 @@ body{
    color: rgba(22, 22, 22, .7);
    font-weight: 400;
 }
+/* Blog Page Cards Style End */
+
+
+/* Upcoming Matchs Page Cards Style Start */
+.match_card{
+   padding: 53px 20px;
+}
+.match_card_flag{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 20px;
+}
+.match_card_flag img {
+   max-width: 90px;
+}
+.match_card_flag p {
+   font-weight: 700;
+   font-size: 16px;
+   /* margin: 0 21px; */
+}
+.match_card_info {
+   text-align: center;
+}
+.match_card_title{
+   font-weight: 600;
+   font-size: 20px;
+   margin-bottom: 10px;
+}
+.match_card_text{
+   color: #4D4D4D;
+   font-size: 16px;
+}
+/* Upcoming Matchs Page Cards Style End */
+
 
 /* Button for only Tablet Divice */
 .tablet_button{
